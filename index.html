@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>วิหารกุหลาบนิทรา | New Witchcraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans+Thai:wght@400;500&family=Noto+Serif+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="arch" clipPathUnits="objectBoundingBox">
+      <path d="M0,1 L0,0.46 C0,0.24 0.34,0.1 0.5,0 C0.66,0.1 1,0.24 1,0.46 L1,1 Z"/>
+    </clipPath>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="เมนูหน้า">
+  <div class="wrap">
+    <span class="brand">New Witchcraft</span>
+    <a class="link" href="#record">ข้อมูลพื้นที่</a>
+    <a class="link" href="#senses">บรรยากาศ</a>
+    <a class="link" href="#places">จุดสำรวจ</a>
+    <a class="link" href="#whispers">ข่าวลือ</a>
+    <a class="link" href="#guide">แนวทาง</a>
+    <a class="link" href="#rules">กฎ</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="images/hero.jpg" alt="วิหารโกธิกกลางหิมะ มีสวนกุหลาบสีดำและรูปปั้นเทวทูต ใต้แสงจันทร์">
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="wrap hero-copy">
+    <span class="pill">🥀 พื้นที่พิเศษ ใช้เวทมนตร์ได้</span>
+    <h1>วิหารกุหลาบนิทรา</h1>
+    <p class="en">The Cathedral of Sleeping Roses</p>
+    <p class="tag">สถานที่ลึกลับระหว่างความฝันและความเป็นจริง</p>
+  </div>
+</header>
+
+<main>
+
+<section id="record">
+  <div class="wrap intro">
+    <div class="story">
+      <p>ไม่มีใครรู้ว่าวิหารถูกสร้างขึ้นเมื่อใด เหลือเพียงอาคารหินโบราณ สวนกุหลาบสีดำ และหิมะที่ตกไม่รู้จบ</p>
+      <p>วิหารกุหลาบนิทราไม่ปรากฏบนแผนที่ทั่วไป ไม่มีอาณาเขตแน่นอน และเครื่องมือบอกทิศธรรมดาไม่อาจชี้ตำแหน่งได้อย่างน่าเชื่อถือ</p>
+      <p>กล่าวกันว่ามันตั้งอยู่ตรงรอยต่อของโลกแห่งความฝันกับโลกจริง ฤดูกาลไม่เคยเปลี่ยน เวลาเคลื่อนช้า และความเงียบกลายเป็นส่วนหนึ่งของธรรมชาติ</p>
+    </div>
+
+    <aside class="record" aria-label="ข้อมูลพื้นที่">
+      <h3>Location Record</h3>
+      <dl>
+        <div class="row"><dt>ประเภท</dt><dd>พื้นที่พิเศษ ดินแดนกึ่งความฝัน</dd></div>
+        <div class="row"><dt>ที่ตั้ง</dt><dd>ไม่ปรากฏบนแผนที่ อยู่ที่รอยต่อระหว่างความฝันกับความจริง</dd></div>
+        <div class="row"><dt>เวทมนตร์</dt><dd><strong>ใช้ได้</strong></dd></div>
+        <div class="row"><dt>ฤดูกาล</dt><dd>ฤดูหนาวตลอดกาล หิมะไม่ละลายตามธรรมชาติ</dd></div>
+        <div class="row"><dt>ท้องฟ้า</dt><dd>กลางคืนหรือพลบค่ำ ดวงจันทร์ใหญ่เหนือยอดวิหาร</dd></div>
+        <div class="row"><dt>แหล่งแสง</dt><dd>แสงจันทร์ แสงเทียน และแสงผ่านกระจกสี</dd></div>
+        <div class="row"><dt>พืชเด่น</dt><dd>กุหลาบสีดำ เถาวัลย์หนาม ต้นไม้ไร้ใบ</dd></div>
+        <div class="row"><dt>สถาปัตยกรรม</dt><dd>โกธิก หินเทาเข้มเกือบดำ ซากวิหารโบราณ</dd></div>
+        <div class="row"><dt>ท่าทีของที่นี่</dt><dd>ไม่เป็นมิตรและไม่เป็นศัตรู เพียงคงอยู่ในความเงียบของตนเอง</dd></div>
+      </dl>
+      <div class="swatches" aria-label="สีประจำพื้นที่">
+        <span class="sw"><i style="background:#eef0f8"></i>ขาวหิมะ</span>
+        <span class="sw"><i style="background:#1a1226"></i>ดำกุหลาบ</span>
+        <span class="sw"><i style="background:#4a4a5c"></i>เทาหิน</span>
+        <span class="sw"><i style="background:#b9bfd6"></i>เงินจันทร์</span>
+        <span class="sw"><i style="background:#3d4268"></i>น้ำเงินหม่น</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="senses" class="senses">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>เมื่อก้าวเข้ามา<small>What the visitor feels</small></h2>
+      <p class="lede">ความงดงาม ความสงบ และความโดดเดี่ยว อยู่ร่วมกันในที่เดียว</p>
+    </div>
+    <div class="sense-grid">
+      <article class="sense"><h3>👁️ สิ่งที่เห็น</h3><p>ยอดหอคอยสูงตั้งตระหง่านเหนือม่านหมอกและต้นไม้สีดำ กลีบกุหลาบที่ร่วงบนหิมะดูเหมือนเศษกระดาษที่ฉีกจากหนังสือ</p></article>
+      <article class="sense"><h3>👂 สิ่งที่ได้ยิน</h3><p>ลมผ่านซุ้มประตู หิมะบนหลังคา กลีบกุหลาบเสียดสีกัน เสียงฝีเท้าสะท้อนในโถง แต่ไม่เคยมีเสียงระฆัง</p></article>
+      <article class="sense"><h3>🌫️ สิ่งที่รู้สึก</h3><p>หนาวสม่ำเสมอแต่ไม่รุนแรงจนอยู่ไม่ได้ หมอกขาวเทาลอยเหนือสวน ลานหิน และสุสาน</p></article>
+      <article class="sense"><h3>🌹 กลิ่น</h3><p>หิมะเย็น หินเก่า ไม้แห้ง กุหลาบดำมีกลิ่นคล้ายดอกไม้แห้งปนกระดาษเก่า หอสมุดมีกลิ่นหมึก สุสานมีกลิ่นดินเย็น</p></article>
+      <article class="sense"><h3>🌙 แสง</h3><p>จันทร์สีเงินในที่โล่ง เทียนและตะเกียงตามทางเดิน เศษกระจกสีทอดแสงม่วง น้ำเงิน และแดงเข้มบนพื้นหิน</p></article>
+      <article class="sense"><h3>✨ ร่องรอยเวทมนตร์</h3><p>ไม่รุนแรง แต่แทรกในสิ่งธรรมดา เช่น กลีบกุหลาบทวนลม ประตูที่ดูใกล้กว่าจริง ทางเดินที่ทำให้รู้สึกว่าผ่านที่เดิมซ้ำ</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="places">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>จุดน่าสนใจ<small>Points of interest</small></h2>
+      <p class="lede">เลือกสำรวจจุดไหนก่อนก็ได้ ไม่ต้องเรียงลำดับ แตะชื่อสถานที่เพื่อดูรายละเอียด</p>
+    </div>
+    <div class="explorer">
+      <div class="place-list" role="tablist" aria-label="จุดน่าสนใจ" id="placeList"></div>
+      <div class="place-panel" id="placePanel" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="whispers" class="draw">
+  <div class="wrap">
+    <div class="draw-box">
+      <div>
+        <h2>เสียงกระซิบ<small>Whispers of the Sleeping Roses</small></h2>
+        <p class="lede">หยิบข่าวลือจากวิหารสักเรื่อง หรือสุ่มปรากฏการณ์ที่ตัวละครอาจพบระหว่างเดินสำรวจ</p>
+        <div class="btns">
+          <button class="btn" id="drawRumor" type="button">🕯️ สุ่มข่าวลือ</button>
+          <button class="btn ghost" id="drawPhen" type="button">❄️ สุ่มปรากฏการณ์</button>
+        </div>
+      </div>
+      <div class="card" id="card" aria-live="polite">
+        <div>
+          <span class="kind">ยังไม่ได้เปิด</span>
+          <q>กดปุ่มด้านซ้ายเพื่อฟังเสียงกระซิบจากวิหาร</q>
+        </div>
+        <div class="foot">ข่าวลือยังไม่มีหลักฐานยืนยัน</div>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-weight:600;font-size:1.3rem;margin-top:64px">ปรากฏการณ์ที่พบได้ทั่วไป</h3>
+    <div class="chips" style="margin-top:18px" id="chips"></div>
+    <p class="note">ทั้งหมดเป็นเพียงบรรยากาศประจำพื้นที่ ไม่ถือเป็นหลักฐานว่ามีสิ่งมีชีวิตหรือวัตถุพิเศษซ่อนอยู่ และผู้เล่นไม่สามารถจับหรือครอบครองได้โดยอัตโนมัติ</p>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>แนวทางการโรลเพลย์<small>Explorer's guide</small></h2>
+      <p class="lede">ใช้เวทมนตร์ตามความเหมาะสมของตัวละคร และเลือกเส้นทางที่อยากเดินได้อย่างอิสระ</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide"><h3>🥾 สำรวจ</h3><ul>
+        <li>บันไดหินและทางเดินรอบวิหาร</li>
+        <li>สุสานและรูปปั้นเทวทูต</li>
+        <li>ห้องโถงและแหล่งกำเนิดแสง</li>
+        <li>ประตูและห้องใต้ดินที่ยังเข้าไม่ถึง</li></ul></div>
+      <div class="guide"><h3>📚 ค้นคว้า</h3><ul>
+        <li>อ่านหนังสือในหอสมุดนิทรา</li>
+        <li>สังเกตความผิดปกติของกระจกเงา</li>
+        <li>ตรวจสอบนาฬิกาและกลไกโบราณ</li>
+        <li>ศึกษาสถาปัตยกรรมและลวดลายแกะสลัก</li></ul></div>
+      <div class="guide"><h3>🪑 ใช้เวลา</h3><ul>
+        <li>พักผ่อนในสวนหรือในวิหาร</li>
+        <li>ชมทิวทัศน์จากหอคอยแห่งดวงจันทร์</li>
+        <li>สังเกตการเปลี่ยนแปลงของหิมะและอากาศ</li>
+        <li>บันทึกปรากฏการณ์และเรื่องราวที่พบเห็น</li></ul></div>
+      <div class="guide"><h3>🤝 พบปะ</h3><ul>
+        <li>แลกเปลี่ยนข้อมูลกับผู้มาเยือนคนอื่น</li>
+        <li>ตรวจสอบกุหลาบสีดำและเถาวัลย์หนามไปพร้อมกัน</li>
+        <li>เปิดพื้นที่ให้ตัวละครอื่นตอบสนองด้วยตนเอง</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="rules" class="rules">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>กฎของพื้นที่<small>Cathedral regulations</small></h2>
+      <p class="lede">เพื่อให้ทุกคนได้เล่นด้วยกันอย่างสบายใจ และให้ความลับของวิหารยังเป็นความลับ</p>
+    </div>
+    <div class="rule-cols">
+      <div class="rule-col do">
+        <h3>ควรทำ</h3>
+        <ul>
+          <li>คำนึงถึงสภาพแวดล้อม เช่น พื้นหินลื่น หิมะ หมอก ทัศนวิสัย และความสูงของอาคาร</li>
+          <li>เคารพพื้นที่โรลเพลย์ของผู้เล่นอื่น และเปิดโอกาสให้ตัวละครแต่ละคนตอบสนองเอง</li>
+          <li>ให้ Game Master พิจารณาก่อนเข้าพื้นที่ปิดหรือห้องใต้ดินที่ยังไม่เปิดเผย</li>
+          <li>ให้ GM พิจารณาผลของเวทมนตร์ที่ใช้กับโครงสร้างเก่าแก่หรือวัตถุโบราณ</li>
+          <li>เข้าใจว่าการเห็นเงา เสียง หรือกลีบกุหลาบผิดปกติ ไม่ได้แปลว่าจะพบต้นกำเนิดทันที</li>
+        </ul>
+      </div>
+      <div class="rule-col dont">
+        <h3>ห้ามทำ</h3>
+        <ul>
+          <li>God Mod หรือควบคุมการกระทำ ความคิด และผลลัพธ์ของตัวละครผู้อื่นโดยไม่ได้รับอนุญาต</li>
+          <li>บังคับผลลัพธ์ของการสำรวจ การใช้เวทมนตร์ หรือการตรวจสอบปรากฏการณ์</li>
+          <li>อ้างว่าค้นพบความลับ สิ่งของพิเศษ หรือทางลับอย่างแน่นอน โดยไม่ผ่านการพิจารณาของ GM</li>
+          <li>อ้างว่าพบ จับ ควบคุม หรือครอบครองสิ่งมีชีวิตวิเศษในวิหารด้วยตนเอง</li>
+          <li>กำหนดคุณสมบัติพิเศษให้กุหลาบ หนังสือ กระจก นาฬิกา หรือตัวอย่างที่เก็บมาเอง</li>
+          <li>ใช้ข้อมูลนอกบทบาท หรือข้อมูลที่ตัวละครยังไม่เคยรับรู้</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finale" id="between">
+  <img src="images/silent-cathedral.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <h2>สถานที่ระหว่างความฝันและความจริง</h2>
+    <p class="big">ไม่ใช่ดินแดนแห่งความตาย ไม่ใช่สรวงสวรรค์ และไม่ใช่สถานที่ที่สร้างขึ้นเพื่อกักขังใคร</p>
+    <p>หิมะยังตกบนหลังคา กุหลาบดำยังบานในสวน แสงจันทร์ยังส่องผ่านกระจกสีลงบนพื้นหิน ไม่มีใครเรียกร้องให้ที่นี่ต้องเปลี่ยนแปลง</p>
+    <p>บางคนมาเพื่อค้นหาความลับ แต่สำหรับบางคน ที่นี่อาจเป็นที่ที่ไม่จำเป็นต้องค้นหาอะไรเลย</p>
+    <p class="motto">The Cathedral of Sleeping Roses — Where Silence Never Sleeps.</p>
+    <p class="motto-th">วิหารกุหลาบนิทรา สถานที่ซึ่งความเงียบไม่เคยหลับใหล</p>
+  </div>
+</section>
+
+</main>
+
+<footer>New Witchcraft · Special Location</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
